@@ -14,6 +14,18 @@
         private string name;
         private bool isAlive;
 
+        // IsAlive Property
+        public bool IsAlive
+        {
+            // I am only 'getting' value so I only need a 'get'
+           
+            get
+            {
+                return isAlive;
+            }
+        
+        }
+
         // Going to use the class 'Weapon' to get the 'field' weapon
         private Weapon weapon;
 
