@@ -1,4 +1,6 @@
-﻿namespace WarriorWars
+﻿using WarriorWars.Enum;
+
+namespace WarriorWars
 {
     class Warrior
     {
