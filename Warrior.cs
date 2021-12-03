@@ -1,10 +1,11 @@
-﻿using WarriorWars.Enum;
+﻿using WarriorWars.Equipment; // Modified namespace, new 'Equipment Folder'
+using WarriorWars.Enum; // Modified namespace, new 'Enum Folder'
 
 namespace WarriorWars
 {
     class Warrior
     {
-        // Starting Health Values for Warriors
+        // Starting Health Values for Warriors;
         private int goodGuyStartingHealth;
         private int badGUyStartingHealth;
 
