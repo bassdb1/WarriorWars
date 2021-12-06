@@ -34,5 +34,31 @@ namespace WarriorWars
 
         // Going to use the class 'Armor' to get the 'armor' weapon
         private Armor armor;
+
+        // Warrior Constructor
+        public Warrior(string name, Faction faction)
+        {
+            this.name = name;
+            this.faction = faction;
+            isAlive = true;
+
+            //Switch Case
+            switch (faction)
+            {
+                case Faction.GoodGuy:
+                    weapon = new Weapon();
+                    armor = new Armor();
+                    health = goodGuyStartingHealth;
+                    break;
+                case Faction.BadGuy:
+                    weapon = new Weapon();
+                    armor = new Armor();
+                    health = badGUyStartingHealth;
+                    break;
+                default:
+                    break;
+            }
+
+        }
     }
 }
