@@ -7,7 +7,7 @@ namespace WarriorWars
     {
         // Starting Health Values for Warriors;
         private int goodGuyStartingHealth;
-        private int badGUyStartingHealth;
+        private int badGuyStartingHealth;
 
         //Faction - A good guy or a bad guy - using enumeratrion
         private Faction faction;
@@ -53,7 +53,7 @@ namespace WarriorWars
                 case Faction.BadGuy:
                     weapon = new Weapon();
                     armor = new Armor();
-                    health = badGUyStartingHealth;
+                    health = badGuyStartingHealth;
                     break;
                 default:
                     break;
