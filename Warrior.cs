@@ -6,8 +6,8 @@ namespace WarriorWars
     class Warrior
     {
         // Starting Health Values for Warriors;
-        private int goodGuyStartingHealth;
-        private int badGuyStartingHealth;
+        private const int GOOD_GUY_STARTING_HEALTH = 100;
+        private const int BAD_GUY_STARTING_HEALTH = 100;
 
         //Faction - A good guy or a bad guy - using enumeratrion
         private Faction faction;
@@ -46,14 +46,14 @@ namespace WarriorWars
             switch (faction)
             {
                 case Faction.GoodGuy:
-                    weapon = new Weapon();
-                    armor = new Armor();
-                    health = goodGuyStartingHealth;
+                    weapon = new Weapon(faction);
+                    armor = new Armor(faction);
+                    health = GOOD_GUY_STARTING_HEALTH;
                     break;
                 case Faction.BadGuy:
-                    weapon = new Weapon();
-                    armor = new Armor();
-                    health = badGuyStartingHealth;
+                    weapon = new Weapon(faction);
+                    armor = new Armor(faction);
+                    health = BAD_GUY_STARTING_HEALTH;
                     break;
                 default:
                     break;
