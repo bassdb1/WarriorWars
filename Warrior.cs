@@ -10,7 +10,9 @@ namespace WarriorWars
         private const int BAD_GUY_STARTING_HEALTH = 100;
 
         //Faction - A good guy or a bad guy - using enumeratrion
-        private Faction faction;
+        // .. readonly = a constant that is 'defined' at runtime'
+        // .. this constant will be 'set' when we create a 'Warrior'
+        private readonly Faction FACTION;
 
         // Fields
         private int health;
@@ -39,7 +41,7 @@ namespace WarriorWars
         public Warrior(string name, Faction faction)
         {
             this.name = name;
-            this.faction = faction;
+            FACTION = faction;
             isAlive = true;
 
             //Switch Case
