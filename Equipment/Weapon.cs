@@ -20,7 +20,6 @@ namespace WarriorWars.Equipment
         }
 
         // Weapon Constructor
-               
         public Weapon(Faction faction) // depending on 'GoodGuy' 'BadGuy'
                                        // .. will determine the weapon
         {
