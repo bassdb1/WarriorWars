@@ -4,8 +4,7 @@ namespace WarriorWars.Equipment
 {
     class Weapon
     {
-        //Fields 
-
+        //Weapon Fields 
         private const int GOOD_GUY_DAMAGE = 5 ;
         private int BAD_GUY_DAMAGE = 5;
         private int damage;
